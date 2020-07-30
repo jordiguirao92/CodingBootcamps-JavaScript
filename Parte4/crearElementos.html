@@ -1,0 +1,19 @@
+<div id="main">
+    <h1 id="title">Hello World!</h1>
+    <p id="hint">Esto es un párrafo.</p>
+</div>
+ 
+<script>
+    //Crear un nuevo elemento div
+    var newDiv = document.createElement("div");
+    
+    //Creando texto
+    var newContent = document.createTextNode("Hola, ¿como estas?");
+    
+    //Añadiendo texto al nuevo div 
+    newDiv.appendChild(newContent);
+    
+    //Añadiendo el nuevo elemento y su contenido al DOM
+    var currentDiv = document.getElementById("main"); 
+    document.body.appendChild(newDiv, currentDiv);
+</script>

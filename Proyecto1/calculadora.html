@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script language="javascript" type="text/javascript">
+            function multiply(){
+                a=Number(document.calculator.number1.value);
+                b=Number(document.calculator.number2.value);
+                c=a*b;
+                document.calculator.total.value=c;
+            }
+
+            function addition(){
+                a=Number(document.calculator.number1.value);
+                b=Number(document.calculator.number2.value);
+                c=a+b;
+                document.calculator.total.value=c;
+            }
+
+            function subtraction(){
+                a=Number(document.calculator.number1.value);
+                b=Number(document.calculator.number2.value);
+                c=a-b;
+                document.calculator.total.value=c;
+            }
+
+            function division(){
+                a=Number(document.calculator.number1.value);
+                b=Number(document.calculator.number2.value);
+                c=a/b;
+                document.calculator.total.value=c;
+            }
+
+            function modulus(){
+                a=Number(document.calculator.number1.value);
+                b=Number(document.calculator.number2.value);
+                c=a%b;
+                document.calculator.total.value=c;
+            }
+        </script>
+        <title>Simple Calculadora en JavaScript</title>
+    </head>
+    <body>
+
+        <!-- Abrimos un formulario HTML --> 
+        <form name="calculator">
+
+        <!-- Introducimos un número --> 
+        Number 1: <input type="text" name="number1"> <br> 
+
+        <!-- Introducimos un segundo número --> 
+        Number 2: <input type="text" name="number2"> <br>
+
+        <!-- Mostramos el resultado --> 
+        Get Result: <input type="text" name="total"> <br>
+
+            <!-- Botones que ejecutan las operaciones asignadas --> 
+            <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <input type="button" value="ADD" onclick="javascript:addition();">
+                        </div>
+                        <div class="col">
+                            <input type="button" value="SUB" onclick="javascript:subtraction();">
+                        </div>
+                        <div class="col">
+                            <input type="button" value="MUL" onclick="javascript:multiply();">
+                        </div>
+                        <div class="col">
+                            <input type="button" value="DIV" onclick="javascript:division();">
+                        </div>
+                        <div class="col">
+                            <input type="button" value="MOD" onclick="javascript:modulus();">
+                        </div>
+                    </div>
+            </div>
+        </form>
+    </body>
+</html>
