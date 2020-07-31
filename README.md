@@ -1,5 +1,7 @@
 # CodingBootcamps-JavaScript
  INTRODUCCIÓN A LA PROGRAMACIÓN CON JAVASCRIPT
+ Los archivos de este repositorio son del curso de Introducción a la programación con JavaScript de Coding Bootcamps: http://coding-bootcamps.com/es/ 
+ Para más información sobre este curso visite el siguiente enlace: https://learn.coding-bootcamps.com/p/introduccion-a-la-programacion-de-javascript 
 
  ## PARTE 3
  Encontramos los ejercicios y prácticas realizadas en el tema 3 del curso.
